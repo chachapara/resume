@@ -1,0 +1,41 @@
+@import "_variable";
+.banner-footer-wapper{
+    position: relative;
+    margin-top: 100px;
+}
+.footer-nav{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.footer-nav img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.footer-link{
+    list-style-type: none;
+    padding: 0;
+}
+.divider{
+    border: 1px solid #6381DB;
+    width: 150px;
+}
+.footer-copy-right{
+    background-color: #69727d;
+}
+.cover{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: -15px;
+    left: -4px;
+    transform: rotate(3deg);
+}
+.Typewriter__wrapper{
+    color:#6381DB !important;
+}
+.Typewriter__cursor{
+    color:#6381DB !important;
+}

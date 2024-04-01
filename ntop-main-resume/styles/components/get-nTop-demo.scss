@@ -1,0 +1,40 @@
+@import "_variable";
+.ntop-getntop-section-wrapper {
+  .ntop-getntop-wrapper {
+    padding: 96px 15px;
+    background: $primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include media-breakpoint-down(lg) {
+      padding: 80px 15px;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 64px 15px;
+    }
+    .ntop-subtitle-text20 {
+      color: $white50;
+      margin: auto;
+      margin-bottom: 32px;
+      max-width: 525px;
+      width: 100%;
+      text-align: center;
+    }
+    .ntop-theme-btn {
+      padding: 16.5px 18px;
+      min-width: 220px;
+      background: $white;
+      color: $black;
+      font-size: 18px;
+      &:hover {
+        background: #ffffff3d;
+        color: $white;
+      }
+      @include media-breakpoint-down(sm) {
+        min-width: 180px;
+        padding: 14.5px 18px;
+      }
+    }
+  }
+}

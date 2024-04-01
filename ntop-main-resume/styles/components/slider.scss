@@ -1,0 +1,256 @@
+@import "_variable";
+.ntop-trusted-section-wrapper {
+  padding: 120px 0;
+  background: $black;
+  @include media-breakpoint-down(lg) {
+    padding: 100px 0 120px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 50px 0 100px;
+  }
+  .ntop-headerbar {
+    .ntop-main-title-text {
+      margin-bottom: 45px;
+      text-align: center;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 35px;
+      }
+      @include media-breakpoint-down(md) {
+        max-width: 280px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .ntop-carousel-slider-wrapper {
+    padding: 55px;
+    background: $primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 4px 8px 40px 0px rgba(0, 0, 0, 0.16);
+    position: relative;
+    min-height: 575px;
+    width: 100%;
+    margin: auto;
+    @include media-breakpoint-down(lg) {
+      padding: 40px;
+      min-height: 400px;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 20px;
+      min-height: 320px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 18px;
+      min-height: 280px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 96px;
+      height: 64px;
+      background: url("/images/qoute-icon.svg") no-repeat;
+      background-position: center;
+      background-size: contain;
+      left: 40px;
+      top: 35px;
+    }
+    .ntop-slider-text {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px;
+      letter-spacing: -0.576px;
+      color: $white;
+      z-index: 1;
+      @include media-breakpoint-down(lg) {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: -0.48px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.384px;
+      }
+    }
+    h4 {
+      opacity: 0.7;
+    }
+    h6 {
+      opacity: 0.5;
+    }
+  }
+  .left {
+    &.carousel {
+      &::after {
+        content: unset !important;
+      }
+      .carousel-control-prev {
+        pointer-events: none;
+        background: rgba(255, 255, 255, 0.24) !important;
+      }
+    }
+    .carousel-control-prev {
+      pointer-events: none;
+      background: rgba(255, 255, 255, 0.24) !important;
+    }
+  }
+  .right {
+    &.carousel {
+      &::before {
+        content: unset !important;
+      }
+      .carousel-control-next {
+        pointer-events: none;
+        background: rgba(255, 255, 255, 0.24) !important;
+      }
+    }
+    .carousel-control-next {
+      pointer-events: none;
+      background: rgba(255, 255, 255, 0.24) !important;
+    }
+  }
+  .carousel {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background: url("/images/slider-before.svg") no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 212px;
+      height: 358px;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      right: 15%;
+      @include media-breakpoint-down(xxl) {
+        right: 14%;
+        height: 300px;
+      }
+      @include media-breakpoint-down(xl) {
+        right: 8%;
+        width: 180px;
+        height: 250px;
+      }
+      @include media-breakpoint-down(lg) {
+        width: 120px;
+        height: auto;
+        right: 16%;
+      }
+      @include media-breakpoint-down(md) {
+        right: 8%;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 100px;
+        right: 10%;
+      }
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background: url("/images/slider-before.svg") no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 212px;
+      height: 358px;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 15%;
+      transform: rotate(180deg);
+      @include media-breakpoint-down(xxl) {
+        left: 14%;
+        height: 300px;
+      }
+      @include media-breakpoint-down(xl) {
+        left: 8%;
+        width: 180px;
+        height: 250px;
+      }
+      @include media-breakpoint-down(lg) {
+        width: 120px;
+        height: auto;
+        left: 16%;
+      }
+      @include media-breakpoint-down(md) {
+        left: 8%;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 100px;
+        left: 10%;
+      }
+    }
+    .carousel-inner {
+      height: 100%;
+      margin-bottom: 26px;
+      max-width: 575px;
+      width: 100%;
+      margin: auto;
+      @include media-breakpoint-down(lg) {
+        max-width: 400px;
+      }
+      @include media-breakpoint-down(md) {
+        max-width: 320px;
+      }
+      @include media-breakpoint-down(sm) {
+        max-width: 375px;
+      }
+    }
+    .carousel-indicators {
+      margin: 0px;
+      bottom: -56px;
+      button {
+        width: 8px;
+        height: 8px;
+        border-radius: 100px !important;
+        margin-right: 6px;
+        margin-left: 6px;
+        border-top: 0px solid #fff !important;
+        border-bottom: 0px solid #fff !important;
+      }
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 52px;
+      height: 52px;
+      border-radius: 1000px;
+      bottom: 0;
+      margin: auto;
+      background: $white !important;
+      transition: all 0.3s ease-in-out;
+      opacity: 1;
+      &:hover {
+        background: rgba(255, 255, 255, 0.24) !important;
+      }
+      .carousel-control-next-icon {
+        width: 25px;
+        height: 25px;
+        background: url("/images/slider-arrow.svg") no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      .carousel-control-prev-icon {
+        width: 25px;
+        height: 25px;
+        background: url("/images/slider-arrow.svg") no-repeat;
+        background-position: center;
+        background-size: contain;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+.right {
+  .carousel-control-next {
+    opacity: 0;
+    pointer-events: none;
+  }
+}

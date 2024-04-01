@@ -1,0 +1,16 @@
+$black: #000000;
+$orange: #FF7F00;
+$white: #FFF;
+$broun: #606060;
+$broun2: #D9D9D9;
+$red: #F24A21;
+$blue: #003f81;
+$Playfair: "Playfair Display";
+$Source: "Source Sans Pro";
+$Poppins:"Poppins";
+
+$brack:790px;
+// media-breakpoint-down //
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";

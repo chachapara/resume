@@ -1,0 +1,5 @@
+// .eslintignore
+build/*
+public/*
+next.config.js
+styles/*
